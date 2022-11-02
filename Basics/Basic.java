@@ -23,9 +23,9 @@ public class Basic {
     /*
      * primitive data types
      * 
-     * byte = takes only 1 byte [ -128 to 127]
-     * short = 2 bytes
-     * int = 4 bytes
+     * byte = takes only 1 byte [ -128 to 127] stores upto 100;
+     * short = 2 bytes = -32,768 to 32,767
+     * int = 4 bytes -214748
      * float = 4 bytes
      * long = 8 bytes
      * char = 2 bytes
@@ -47,6 +47,7 @@ public class Basic {
 
     // char can store all letters and symbols too..
     char symbol = '@';
+    char copyright = '\u00A9';
 
     boolean edible = false;
 
