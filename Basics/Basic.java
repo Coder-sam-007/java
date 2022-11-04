@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Basic {
   public static void main(String[] args) {
 
@@ -23,9 +21,9 @@ public class Basic {
     /*
      * primitive data types
      * 
-     * byte = takes only 1 byte [ -128 to 127] stores upto 100;
+     * byte = 1 byte [ -128 to 127] stores upto 100
      * short = 2 bytes = -32,768 to 32,767
-     * int = 4 bytes -214748
+     * int = 4 bytes -2147483648 to 2147483647
      * float = 4 bytes
      * long = 8 bytes
      * char = 2 bytes
@@ -51,6 +49,16 @@ public class Basic {
 
     boolean edible = false;
 
+    System.out.println("var1: " + var1 +
+        "\nvar2: " + var2 +
+        "\nvar3: " + var3 +
+        "\nnum1: " + num1 +
+        "\nnum2: " + num2 +
+        "\nnum3: " + num3 +
+        "\nsymbol: " + symbol +
+        "\ncopyright: " + copyright +
+        "\nedible: " + edible);
+
     /*
      * Non-primitive data types
      * 
@@ -65,21 +73,7 @@ public class Basic {
 
     final float PI = 3.14F;
 
-    // taking inputs
-
-    Scanner input = new Scanner(System.in);
-
-    System.out.print("Enter your name: ");
-    String namde = input.next();
-    System.out.println("Your name is: " + namde);
-
-    System.out.print("Enter your age: ");
-    int age = input.nextInt();
-    System.out.println("Your age is: " + age);
-
-    System.out.print("Write a quote: ");
-    String quote = input.nextLine();
-    System.out.println("Your quote is: " + quote);
+    System.out.println(PI + " is a constat.");
   }
 
 }

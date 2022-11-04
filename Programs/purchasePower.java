@@ -6,6 +6,8 @@ public class purchasePower {
     System.out.print("Enter the amount of money you have: ");
     int totalMoney = inp.nextInt();
 
+    inp.close();
+
     int bookPrice = 100;
     int penPrice = 10;
 

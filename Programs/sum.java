@@ -14,6 +14,8 @@ public class sum {
 
     } while (num != 0);
 
+    in.close();
+
     System.out.println("The End");
 
   }

@@ -10,6 +10,7 @@ public class arrays {
     marks[2] = 88;
 
     System.out.println(marks); // it doesn't print the whole array
+    System.out.println("Printing array by converting it to string: " + Arrays.toString(marks));
 
     for (int i = 0; i < marks.length; i++) {
       System.out.println("marks[" + i + "] = " + marks[i]);

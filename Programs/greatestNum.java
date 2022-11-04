@@ -22,6 +22,8 @@ public class greatestNum {
     int num2 = in.nextInt();
     int num3 = in.nextInt();
 
+    in.close();
+
     System.out
         .println("The greatest num among the numbers that you have entered is: " + greatest_num(num1, num2, num3));
   }
