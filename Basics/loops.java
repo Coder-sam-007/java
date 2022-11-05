@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class loops {
   public static void main(String[] args) {
 
@@ -26,7 +28,27 @@ public class loops {
       System.out.print(num * 100 + " ");
     }
 
-    
+    ArrayList<Integer> mArrayList = new ArrayList<Integer>();
+
+    mArrayList.add(12);
+    mArrayList.add(7);
+    mArrayList.add(05);
+    mArrayList.add(11);
+    mArrayList.add(4);
+
+    System.out.print("\n\nPrinting all the elements of an ArrayList: ");
+
+    mArrayList.forEach(num -> {
+      System.out.print(num + " ");
+    });
+
+    System.out.print("\n\nConverting every elements into square: ");
+
+    mArrayList.forEach(num -> {
+      mArrayList.set(mArrayList.indexOf(num), num * num);
+    });
+
+    System.out.println(mArrayList.toString() + " ");
 
   }
 }

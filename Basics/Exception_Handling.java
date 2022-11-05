@@ -17,5 +17,7 @@ public class Exception_Handling {
     } catch (Exception e) {
       System.out.println("An error has occured while accessing the data\nand the error is: " + e.getMessage());
     }
+
+    in.close();
   }
 }

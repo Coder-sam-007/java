@@ -9,7 +9,7 @@ public class arrays {
     marks[1] = 12;
     marks[2] = 88;
 
-    System.out.println(marks); // it doesn't print the whole array
+    System.out.println("marks array: " + marks); // it doesn't print the whole array
     System.out.println("Printing array by converting it to string: " + Arrays.toString(marks));
 
     for (int i = 0; i < marks.length; i++) {
@@ -21,6 +21,7 @@ public class arrays {
     // directly initialising arrays:
 
     int[] nums = { 23, 556, 87, 34, 53, 23 };
+    System.out.println("nums array: " + nums); // if we directly print array it show a garbage value
 
     int array_2D[][] = { { 12, 34, 69 }, { 45, 67, 89 } };
 
