@@ -36,5 +36,7 @@ public class Guess_a_num {
 
     } while (userNum != randomNum);
 
+    input.close();
+
   }
 }

@@ -12,6 +12,7 @@ public class multiply_float {
 
         System.out.println("The product of your Entered numbers are: " + (num1 * num2));
 
+        in.close();
     }
 
 }

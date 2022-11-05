@@ -10,5 +10,7 @@ public class integer {
 
         System.out.println("You have entered: " + num);
 
+        input.close();
+
     }
 }
