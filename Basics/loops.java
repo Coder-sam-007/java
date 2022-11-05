@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class loops {
   public static void main(String[] args) {
@@ -48,7 +49,19 @@ public class loops {
       mArrayList.set(mArrayList.indexOf(num), num * num);
     });
 
-    System.out.println(mArrayList.toString() + " ");
+    System.out.println(mArrayList.toString() + "\n");
+
+    // hashMap iteration:
+
+    HashMap<String, Integer> priceTabMap = new HashMap<String, Integer>();
+    priceTabMap.put("Mobile", 5000);
+    priceTabMap.put("Tablet", 10000);
+    priceTabMap.put("Laptop", 60000);
+    priceTabMap.put("Desktop", 100000);
+
+    priceTabMap.forEach((key, value) -> {
+      System.out.println(key + "-> " + value);
+    });
 
   }
 }
