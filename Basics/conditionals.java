@@ -1,4 +1,3 @@
-import java.time.DayOfWeek;
 import java.util.Scanner;
 
 public class conditionals {
@@ -62,5 +61,7 @@ public class conditionals {
       j++;
 
     }
+
+    input.close();
   }
 }

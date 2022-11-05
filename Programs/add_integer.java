@@ -11,5 +11,7 @@ public class add_integer {
 
         System.out.println("The sum of your Entered numbers are: " + (num1 + num2));
 
+        in.close();
+
     }
 }
