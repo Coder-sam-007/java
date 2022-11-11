@@ -6,9 +6,9 @@ public class test {
 
     Scanner sc = new Scanner(System.in);
 
-    float a = 100 / 10 * 20 / 5;
+    String str = "SoftwareEngineerTestingEngineerHelp";
 
-    System.out.println(a);
+    String[] splits = str.split("");
 
     sc.close();
 

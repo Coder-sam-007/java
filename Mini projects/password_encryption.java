@@ -11,7 +11,6 @@ public class password_encryption {
 
     String Encrypted_string = " ";
     String codes = "abcdefghiklmnopqrstuvwxyz1234567890!@#$%^&*()";
-    System.out.println(codes.split(" "));
 
     return Encrypted_string;
   }
