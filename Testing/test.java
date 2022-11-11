@@ -1,8 +1,16 @@
+import java.util.Scanner;
+
 public class test {
-  static int count;
 
   public static void main(String[] args) {
-    count++;
-    System.out.println("count: " + count);
+
+    Scanner sc = new Scanner(System.in);
+
+    float a = 100 / 10 * 20 / 5;
+
+    System.out.println(a);
+
+    sc.close();
+
   }
 }
