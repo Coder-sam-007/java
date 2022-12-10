@@ -10,6 +10,10 @@ public class test {
 
     String[] splits = str.split("");
 
+    for (String string : splits) {
+      System.out.println(string);
+    }
+
     sc.close();
 
   }
