@@ -14,5 +14,7 @@ public class test {
       System.out.println(string);
     }
 
+    sc.close();
+
   }
 }
