@@ -6,12 +6,16 @@ public class test {
 
     Scanner sc = new Scanner(System.in);
 
-    String str = "SoftwareEngineerTestingEngineerHelp";
+    System.out.print("Enter password: ");
 
-    String[] splits = str.split("");
+    String password = sc.nextLine();
 
-    for (String string : splits) {
-      System.out.println(string);
+    String mah_password = "Cyclopes";
+
+    if (password.equals(mah_password)) {
+      System.out.println("You have entered to the Matrix Succesfully..");
+    } else {
+      System.out.println("You are a looser..");
     }
 
     sc.close();
