@@ -1,24 +1,23 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class test {
 
   public static void main(String[] args) {
 
-    Scanner sc = new Scanner(System.in);
+    try {
+      FileOutputStream Fout = new FileOutputStream("abc.docx");
 
-    System.out.print("Enter password: ");
+      String s = "The Zain";
+      byte b[] = s.getBytes();
 
-    String password = sc.nextLine();
+      Fout.write(b);
+      Fout.close();
 
-    String mah_password = "Cyclopes";
+      System.out.println("Success");
 
-    if (password.equals(mah_password)) {
-      System.out.println("You have entered to the Matrix Succesfully..");
-    } else {
-      System.out.println("You are a looser..");
+    } catch (Exception e) {
+      System.out.println(e.getLocalizedMessage());
     }
-
-    sc.close();
 
   }
 }
