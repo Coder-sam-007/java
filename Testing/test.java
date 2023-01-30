@@ -1,24 +1,21 @@
-import java.util.Scanner;
+import java.io.*;
+
+class shape {
+  public void area() {
+    System.out.println("It displays area");
+  }
+}
+
+class triangle extends shape {
+  public void area(int b, int h) {
+    System.out.println(0.5 * b * h);
+  }
+}
 
 public class test {
-
   public static void main(String[] args) {
-
-    Scanner sc = new Scanner(System.in);
-
-    System.out.print("Enter password: ");
-
-    String password = sc.nextLine();
-
-    String mah_password = "Cyclopes";
-
-    if (password.equals(mah_password)) {
-      System.out.println("You have entered to the Matrix Succesfully..");
-    } else {
-      System.out.println("You are a looser..");
-    }
-
-    sc.close();
-
+    triangle t1 = new triangle();
+    t1.area();
+    t1.area(12, 10);
   }
 }
