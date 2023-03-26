@@ -23,7 +23,21 @@ public class arrays {
     int[] nums = { 23, 556, 87, 34, 53, 23 };
     System.out.println("nums array: " + nums); // if we directly print array it show a garbage value
 
+    // 2D array
+
     int array_2D[][] = { { 12, 34, 69 }, { 45, 67, 89 } };
+
+    System.out.println("Printing a 2d array: ");
+
+    int row = array_2D.length;
+    int col = array_2D[0].length;
+
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
+        System.out.print(array_2D[i][j] + " ");
+      }
+      System.out.println(" ");
+    }
 
     /* some array prperties: */
 
@@ -69,15 +83,6 @@ public class arrays {
     // Arrays.fill(numArr, key); -- it fills completely
     Arrays.fill(numArr, startIndex, lastIndex, key);
     System.out.println("Array is filled with fill method: " + Arrays.toString(numArr));
-
-    // printing 2D array
-
-    for (int i = 0; i < array_2D.length; i++) {
-      for (int j = 0; j < array_2D[i].length; j++) {
-        System.out.print(array_2D[i][j] + " ");
-      }
-      System.out.println(" ");
-    }
 
     /*
      * Copying arrays doesn't really copy the whole array.

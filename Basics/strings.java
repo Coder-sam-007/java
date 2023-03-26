@@ -1,4 +1,10 @@
 public class strings {
+
+  public static void modifyString(String str) {
+    str += " is modified";
+    System.out.println("Inside method: " + str);
+  }
+
   public static void main(String[] args) {
     // Strings
     // strings are immutable, which means we can't change the original string
@@ -8,6 +14,8 @@ public class strings {
     String fruit2 = new String("banana");
 
     // some string methods
+
+    System.out.println("comparing apple and banana: " + fruit.compareTo(fruit2));
 
     System.out.println("the length of the fruit is: " + fruit2.length());
     System.out.println("is the fruit string empty: " + fruit.isEmpty());
@@ -88,6 +96,14 @@ public class strings {
         "%s is %d years old and he likes %s and he scores %.2f%c in his graduation.These all are %b claims", name,
         age,
         fav_toy, percent, percentSign, claim);
+
+    String original = "This string";
+    modifyString(original);
+    System.out.println(original);
+
+    String myString = "Original string";
+    modifyString(myString);
+    System.out.println("Outside method: " + myString);
 
   }
 
