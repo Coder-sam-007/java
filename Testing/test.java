@@ -17,5 +17,9 @@ public class test {
     triangle t1 = new triangle();
     t1.area();
     t1.area(12, 10);
+
+    int x = 10;
+    int y = x++;
+    System.out.println(y + " " + x);
   }
 }
